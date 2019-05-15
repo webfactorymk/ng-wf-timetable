@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to wf-timetable!');
+    expect(page.getTitleText()).toEqual('Welcome to wf-ng-wf-timetable!');
   });
 });

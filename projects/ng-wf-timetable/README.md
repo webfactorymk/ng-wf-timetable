@@ -1,11 +1,3 @@
-# WfTimetable
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 # NG WF Timetable
 
 NgWf timetable is an Angular2+ library for showing time-based schedules in different locations in a timetable format where every schedule has a location and may contain events.
@@ -129,4 +121,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-

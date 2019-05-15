@@ -1,0 +1,26 @@
+<div class="timetable" *ngIf="scope && schedules">
+  <aside #asideColumn>
+    <ul>
+      <li *ngFor="let schedule of schedules">{{schedule.location.name}}</li>
+    </ul>
+  </aside>
+  <section timetableScroll="" [timeline]="timeline">
+    <time>
+      <div class="time-head">
+      </div>
+      <header timetableTimelineHeader [scope]="scope"></header>
+      <ul #timeline class="room-timeline" timetableAsideScroll [asideColumn]="asideColumn"
+          [ngStyle]="{'width': scope.getTimetableWidth()}">
+        <li class="time-marker" *ngFor="let schedule of schedules">
+            <span class="time-entry" *ngFor="let event of schedule.events"
+                  (click)="eventClicked(event)"
+                  [ngStyle]="{'width': event.getEventWidth(scope), 'left': event.getEventOffset(scope), background: event.color}">
+              <span>
+                {{event.title}}
+              </span>
+            </span>
+        </li>
+      </ul>
+    </time>
+  </section>
+</div>

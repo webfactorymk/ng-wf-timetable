@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "ng-wf-timetable": {
+      "root": "projects/ng-wf-timetable",
+      "sourceRoot": "projects/ng-wf-timetable/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-wf-timetable/tsconfig.lib.json",
+            "project": "projects/ng-wf-timetable/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-wf-timetable/src/test.ts",
+            "tsConfig": "projects/ng-wf-timetable/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-wf-timetable/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-wf-timetable/tsconfig.lib.json",
+              "projects/ng-wf-timetable/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "wf-timetable"
