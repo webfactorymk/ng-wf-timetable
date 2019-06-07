@@ -25,7 +25,7 @@ NgWf timetable is an Angular2+ library for displaying time-based schedules acros
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/package/ng-wf-timetable) to install ng2-wf-timetable.
+Use the package manager [npm](https://www.npmjs.com/package/ng2-wf-timetable) to install ng2-wf-timetable.
 
 ```bash
 npm i ng2-wf-timetable
