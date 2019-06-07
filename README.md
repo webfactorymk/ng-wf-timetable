@@ -42,13 +42,13 @@ npm i ng2-wf-timetable
 
 ## Usage
 
-1. Import NgWfTimetableModule in your application module or feature module.
+1. Import NgWfTimetableModule from `ng2-wf-timetable` in your application or feature module.
 
 2. In your component.ts :
 ```typescript
 
 import {Component, OnInit} from '@angular/core';
-import {TimetableEvent, TimetableLocation, TimetableSchedule, TimetableScope} from 'ng-wf-timetable';
+import {TimetableEvent, TimetableLocation, TimetableSchedule, TimetableScope} from `ng2-wf-timetable`;
 
 export class AppComponent implements OnInit {
   scope: TimetableScope;
