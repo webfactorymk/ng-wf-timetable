@@ -324,15 +324,3 @@ $timetableCellWidth: 32px;
     margin-bottom: 5px;
   }
 }
-
-@media only screen and (max-width: 960px) {
-  .timetable {
-    aside {
-      width: 40%;
-    }
-
-    section {
-      width: 60%;
-    }
-  }
-}
