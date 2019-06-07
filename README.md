@@ -110,29 +110,29 @@ e.g new TimetableLocation('0', 'Room 1')
       window.alert(event.title);
     }
   }
-  ```
-  ### Dynamic methods
-  Add new events to the timetable dynamically by calling `addEvent(newEvent)` method on the targeted schedule.
-  ```
-  addTimetableEvent(): void {
-    const newEvent = new TimetableEvent(/*Enter params*/);
-    this.schedules[0].addEvent(newEvent);
-  }
-  
-  ``` 
-  Remove events from the timetable dynamically by calling `removeEvent(eventId)` method on the targeted schedule.
-  ```
-  removeTimetableEvent(): void {
-    this.schedules[0].removeEvent(/*eventId: string*/);
-  }
-  ``` 
-  Add schedules to the timetable dynamically by applying Array methods such as `push(newSchedule)` on your predefined schedules Array.
-  ```
-  addTimetableSchedule(): void {
-    const newSchedule = new TimetableSchedule(/*Enter params*/);
-    /* Schedules array supports all array operations */
-    this.schedules.push(newSchedule);
-  }
+```
+### Dynamic methods
+Add new events to the timetable dynamically by calling `addEvent(newEvent)` method on the targeted schedule.
+```
+addTimetableEvent(): void {
+  const newEvent = new TimetableEvent(/*Enter params*/);
+  this.schedules[0].addEvent(newEvent);
+}
+
+``` 
+Remove events from the timetable dynamically by calling `removeEvent(eventId)` method on the targeted schedule.
+```
+removeTimetableEvent(): void {
+  this.schedules[0].removeEvent(/*eventId: string*/);
+}
+``` 
+Add schedules to the timetable dynamically by applying Array methods such as `push(newSchedule)` on your predefined schedules Array.
+```
+addTimetableSchedule(): void {
+  const newSchedule = new TimetableSchedule(/*Enter params*/);
+  /* Schedules array supports all array operations */
+  this.schedules.push(newSchedule);
+}
 
 ```
 
