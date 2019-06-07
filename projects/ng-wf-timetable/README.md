@@ -2,18 +2,25 @@
 
 NgWf timetable is an Angular2+ library for displaying time-based schedules across several locations in a timetable format where each schedule has a location and may contain events.
 
+## Features
+1. Fixed location display names on horizontal scroll.
+2. Click and drag to scroll on location timeline.
+3. Fixed time interval on vertical scroll when component height is set.
+4. Dynamically add and remove events and schedules from timetable.
+
 ## Preview
 
 ![alt text](https://raw.githubusercontent.com/webfactorymk/ng-wf-timetable/master/src/assets/screenshot1.png)
 #### [Github](https://github.com/webfactorymk/ng-wf-timetable)
 #### [Preview on StackBlitz](https://angular-nteqku.stackblitz.io)
 
+
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/package/ng-wf-timetable) to install ng-wf-timetable.
+Use the package manager [npm](https://www.npmjs.com/package/ng-wf-timetable) to install ng2-wf-timetable.
 
 ```bash
-npm i ng-wf-timetable
+npm i ng2-wf-timetable
 ```
 ## HTML Template
 ``` HTML

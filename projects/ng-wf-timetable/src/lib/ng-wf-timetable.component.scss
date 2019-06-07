@@ -13,6 +13,7 @@ $timetableCellWidth: 32px;
 .timetable {
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: inherit;
 
   &::after {
     clear: both;
